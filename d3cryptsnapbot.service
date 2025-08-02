@@ -1,0 +1,11 @@
+[Unit]
+Description=Telegram Bot for D3cryptSnap
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /path/to/bot/bot.py
+WorkingDirectory=/path/to/
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
